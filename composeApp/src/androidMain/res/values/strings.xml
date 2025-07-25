@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RickAndMortyV2</string>
+    <string name="no_data_available">No data available</string>
+    <string name="back">Voltar</string>
+    <string name="label_name">Nome</string>
+    <string name="label_location">Localização</string>
+    <string name="label_status">Status</string>
+    <string name="label_species">Especie</string>
+    <string name="label_episode">Episodios</string>
+    <string name="label_gender">Genero</string>
+</resources>
