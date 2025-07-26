@@ -1,17 +1,23 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+Este é um projeto Kotlin Multiplataforma voltado para Android e iOS.
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+* `/composeApp` é para o código que será compartilhado entre seus aplicativos Compose Multiplataforma.
+Ele contém várias subpastas:
+- `commonMain` é para o código comum a todos os destinos.
+- Outras pastas são para o código Kotlin que será compilado apenas para a plataforma indicada no nome da pasta.
+Por exemplo, se você quiser usar o CoreCrypto da Apple para a parte iOS do seu aplicativo Kotlin,
+`iosMain` seria a pasta certa para essas chamadas.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+* `/iosApp` contém aplicativos iOS. Mesmo se você estiver compartilhando sua interface com o Compose Multiplataforma,
+você precisa deste ponto de entrada para seu aplicativo iOS. É aqui também que você deve adicionar o código SwiftUI para o seu projeto.
 
-* `/shared` is for the code that will be shared between all targets in the project.
-  The most important subfolder is `commonMain`. If preferred, you can add code to the platform-specific folders here too.
+* `/shared` é para o código que será compartilhado entre todos os destinos do projeto.
+A subpasta mais importante é `commonMain`. Se preferir, você também pode adicionar código às pastas específicas da plataforma aqui.
+
+Saiba mais sobre [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
 
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+Principais livrarias utilizadas nesse projeto:
+* `ktor` - Conectividade com a internet
+* `coil` - Carregamento de imagens asincronas
+* `koin` -  Injetor de dependencias
+* `skie` - Compatibilizador de ViewModels entre Android e iOS
